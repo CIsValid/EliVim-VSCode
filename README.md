@@ -63,6 +63,41 @@ Once you have installed these prerequisites, you can proceed with the customizat
 ### Installation
 
 ⚠️ **Warning:** Before customizing VSCode, it is highly recommended to make a backup of your current setup. This will allow you to revert back to your original configuration if needed.
+
+<details>
+<summary>Windows Step-by-step Setup (click to expand)</summary>
+
+### Windows
+
+1. **Download and extract VSCode (v1.94 Portable Zip, working & tested)**  
+   Download from [VSCode v1.94.2 releases](https://update.code.visualstudio.com/1.94.2/win32-x64-archive/stable) and extract to:  
+   `C:\D\VSCode-EliVim`
+
+2. **Place configuration files**  
+   Copy the following into `C:\D\VSCode-EliVim\data\user-data\User`:
+   - `keybindings.json`
+   - `settings.json`
+   - `tasks.json`
+   - `welcomePage.js`
+   **If Folder Doesn't Exist Already - Make It**
+    - `C:\D\VSCode-EliVim\data\user-data\User`
+
+3. **Launch VSCode**  
+   Open terminal and run:
+   ```sh
+   cd C:\D\VSCode-EliVim
+   .\Code.exe .\EliVim
+   ```
+   When prompted, click **Install All Recommended Extensions**.
+
+4. **Final touches**
+   - Ignore extra extension setup prompts unless needed (Those Asking To Install).
+   - Restart VSCode if some extensions didn’t activate right away.
+
+🎉 Done! EliVim should now be fully functional on Windows.
+
+</details>
+
 ##### on Mac OS:
 ```bash
 > cp "${userHome}/Library/Application Support/Code/User/" "${userHome}/Library/Application Support/Code/User.bak"
